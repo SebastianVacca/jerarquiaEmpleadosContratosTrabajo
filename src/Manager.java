@@ -2,7 +2,7 @@ public class Manager extends Employee{
     private Double bonoAnual;
 
     public Manager(String nombre, String id, double salary, Double bonoAnual){
-        super(nombre, id, bonoAnual);
+        super(nombre, id, salary);
         this.bonoAnual = bonoAnual;
     }
 
