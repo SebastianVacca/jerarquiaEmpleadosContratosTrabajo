@@ -1,4 +1,4 @@
-public class Manager extends Employee{
+public class Manager extends Employee implements Trabajable{
     private Double bonoAnual;
 
     public Manager(String nombre, String id, double salary, Double bonoAnual){
@@ -20,5 +20,10 @@ public class Manager extends Employee{
         
         super.mostrarDetalles();
         System.out.printf("Bono anual: %,.1f%n", getBonoAnual());
+    }
+
+    @Override
+    public void trabajar() {
+        System.out.println("Este es el gerente y su función es dirigir y supervisar");
     }
 }
