@@ -27,7 +27,11 @@ public class Employee {
     }
 
     public void mostrarDetalles(){
-        toString();
+        System.out.printf("""
+                Nombre: %s%n
+                Id: %s%n
+                Salario base: %,.1f%n
+                """, getNombre(), getId(), getSalary());
     }
 
     public void mostrarDetalle(String prefijo){
